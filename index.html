@@ -12,32 +12,34 @@
             <h1>Tip Calculator</h1>
         </header>
         <div class='Calculator'>
-            <div id='input-cost'>
-                <p>How much was your bill?</p>
-                <div class='before'>$</div>
-                <input type="number" class='cost' placeholder='Bill Amount'/>
-            </div>
-            <div id='input-service'>
-                <p>How was your service?</p>
-                <select id="serviceQuality">
-                    <option disabled value="0">--Choose an Option--</option>
-                    <option value="0.3">30% - Outstanding</option>
-                    <option value="0.2">20% - Good</option>
-                    <option value="0.1">10% - Bad</option>
-                    <option value="0.05">5% - Terrible</option>
-                </select>
-            </div>
-            <div id='input-peopleamt'>
+            <form>
+                <div class='input-cost'>
+                    <p>How much was your bill?</p>
+                    <div class='before'>$</div>
+                    <input id="billamt" class='cost' placeholder='Bill Amount'/>
+                </div>
+                <div class='input-service'>
+                    <p>How was your service?</p>
+                    <select id="serviceQuality">
+                        <option disabled value="0">--Choose an Option--</option>
+                        <option value="0.3">30% - Outstanding</option>
+                        <option value="0.2">20% - Good</option>
+                        <option value="0.1">10% - Bad</option>
+                        <option value="0.05">5% - Terrible</option>
+                    </select>
+                </div>
+            </form>
+            <div class='input-peopleamt'>
                 <p>How many people are sharing the bill?</p>
                 <input id='numPeople' type="text" placeholder="Number of People"> People
             </div>
-            <div id='button'>
+            <div class='calcButton'>
                 <button type='button' id='calculate'>
                     Calculate!
                 </button>
             </div>
             <div id='tipTotal'>
-                <h2 id='tip-amount'>TIP AMOUNT</h2>
+                <h2 id='tip-amount'>tip amount</h2>
                 <sup>$</sup><span id='tip'>0.00</span>
                 <small id='each'>each</small>
             </div>
